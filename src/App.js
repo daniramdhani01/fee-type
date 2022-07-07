@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom'
+
+// import pages
+import LandingPage from './pages/LandingPage'
+import NotFound from './pages/NotFound';
+import Greating from './pages/Greating';
+import EditFT from './pages/EditFT';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Greating />} />
+      <Route index path="/master-data-management/fee-type" element={<LandingPage />} />
+      <Route index path="/master-data-management/fee-type/edit-fee-type" element={<EditFT />} />
+      <Route path='*' element={<NotFound />} />
+    </Routes>
   );
 }
+
 
 export default App;

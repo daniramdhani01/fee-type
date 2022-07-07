@@ -36,3 +36,129 @@
     transform: rotate(360deg);
   }
 }
+
+.pointer{
+  cursor: pointer;
+}
+
+.nav-logo{
+  object-fit: contain;
+  width: 25vh;
+  height: 8vh;
+}
+
+.nav-user-icon{
+  width: 8vh;
+  height: 8vh;
+  min-width: 40px;
+  min-height: 40px;
+  object-fit: cover;
+  padding: 2px;
+  border: grey 1px solid;
+}
+
+.nav-icon{
+  min-height: 40px;
+  height: 5vh;
+}
+.nav-user-name{
+  color: #333333;
+}
+.nav-user-desc{
+  color: #818181;
+}
+.nav-dd-icons{
+  width: 30px;
+  margin: 0px 10px;
+}
+
+aside{
+  background: #027F71 0% 0% no-repeat padding-box;
+  height: 100vh;
+  width: 10vh;
+  /* position: fixed; */
+}
+
+.try{
+  height: 200vh;
+  background-color: #61dafb;
+}
+.side-icon{
+  height: 5vh;
+  width: 5vh;
+  cursor: pointer;
+}
+.side{
+  width: 100%;
+  text-align: center;
+  padding: 8px 0px;
+}
+.side-active{
+  background: #FDC300 0% 0% no-repeat padding-box;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0px;
+}
+
+
+
+.dropdown-toggle::after {
+  display: none !important; 
+}
+.position-before{
+  color: #818181;
+}
+.position-here{
+  color: #E84D0E;
+}
+.tb-icon{
+  cursor: pointer;
+  width: 20px;
+  margin: 0px 4px;
+}
+
+thead{
+  background-color: #5E5E5E;
+  color: white;
+}
+
+#example{
+  border-radius: 200px;
+}
+
+.dataTables_filter {
+  float: left !important;
+  margin-bottom: 20px;
+
+  /* display: none; */
+}
+
+.dataTables_filter input{
+  background-image: url('./assets/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20px;
+  border: D9DFE7 20px solid ;
+}
+
+.dt-search{
+  width: 40% !important; 
+  height: 33px;
+  background-image: url("./assets//icons//search.svg");
+  background-position: 210px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+
+.dt-adv-arrow .rotate-icon{
+  transform: rotate(180deg);
+}
+.dt-status-filter{
+  display: none;
+}
+.dt-status-filter-show{
+  background: #F5F7F9 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 5px #3C46531A;
+  border: 1px solid #C7CDD6D9;
+  opacity: 1;
+}
